@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LOCALIDADE</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/2972/2972562.svg">
+</head>
+<body>
+    <header id="cabecalho">
+        <ul>
+            <li>
+                <a class="cab-superior" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="cab-superior" href="">Consultar Localidade</a>
+            </li>
+            <li>
+                <a class="cab-superior" href="ip.html">Consultar por IP</a>
+            </li>
+        </ul>
+    </header>
+    <div id="divLocal">
+        <label class="label1" for="contN">Continente </label>
+            <select name="contN" id="continent" onchange="city(this)">
+                    <option value="" hidden></option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                    <option value="asia">Asia</option>
+                    <option value="atlantic">Atlantic</option>
+                    <option value="australia">Australia</option>
+                    <option value="europe">Europe</option>
+                    <option value="indian">Indian</option>
+                    <option value="pacific">Pacific</option>
+                
+            </select>
+        <label class="label1" for="citN">Cidades</label>
+        <select name="citN" id="cities" onchange="ResultCity(this)" ></select>
+    </div>  
+    <div id="change" >
+
+    </div>
+    <script src="mainLocal.js"></script>
+</body>
+</html>
